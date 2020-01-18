@@ -7,3 +7,19 @@ body {
 #mainInput {
   margin-bottom: 20px;
 }
+
+#showInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 22em;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 20em;
+  height: 18em;
+  margin-top: 20px;
+}

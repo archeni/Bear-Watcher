@@ -13,8 +13,9 @@ function BearObj(id, name, picture) {
 const cardPrinter = () => {
   let stringDom = '';
   for (let i = 0; i < bear.bears.length; i += 1) {
-    stringDom += `<div id="${bear.bears[i].id}" class="card container" style="width: 25rem;">
-      <img src="${bear.bears[i].picture}" class="card-img-top" alt="location" style="width: 23rem; height: 18rem">
+    stringDom += `<div id="${bear.bears[i].id}" class='card container column'>
+    <div>
+      <img src="${bear.bears[i].picture}" class="card-img-top" alt="location">
       <div class="card-body">
         <h5 class="card-title">${bear.bears[i].name}</h5>
         <small class="form-text">${bear.bears[i].id}</small>
@@ -29,6 +30,7 @@ const cardPrinter = () => {
       stringDom += `<div>${bear.bears[i].successTimestamp}</div>\n`;
     }
     stringDom += `<div class='card-text'><b>Number of successful catches:</b> ${bear.bears[i].successfulCatch}</div>
+        </div>
       </div>
     </div>`;
   }
